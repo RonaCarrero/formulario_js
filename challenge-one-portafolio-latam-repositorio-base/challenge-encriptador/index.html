@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/android-chrome-192x192.png">
+    <title>- Encriptador -</title>
+</head>
+
+<body>
+    <section class="sectionOne">
+
+        <header>
+            <h1 class="logo">
+                <img src="img/Logo-1.png" class="img-logo" alt="Logo de Alura">
+            </h1>
+        </header>
+
+        <textarea name="" id="msgIngresado" class="msgIngresado" placeholder="Ingrese el texto aqui"
+            required></textarea>
+
+        <div class="containerBtn">
+            <div class="container-txt">
+                <img src="img/bi_exclamation-circle-fill-1.png" class="img-exc" alt="signo de exclamaciòn">
+                <p class="txt-btn">Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="containerBtns">
+                <input type="button" class="btn1-style" onclick="encriptar()" value="Encriptar">
+                <input type="button" class="btn2-style" onclick="desencriptar()" value="Desencriptar">
+            </div>
+           
+        </div>
+
+    </section>
+
+    <section class="sectionTwo">
+
+        <div class="container-right">
+            <img src="img/Muñeco.png" class="img-right" id="img-right" alt="imagen hombre buscando" hidden>
+
+            <div class="container-txt-right" id="container-txt-right">
+                <p class="txt-one">Ningún mensaje fue encontrado</p>
+                <p class="txt-two">ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <textarea name="" id="txt-final" class="txt-final" ></textarea>
+            <input type="button" class="btn-copy" id="btn-copy" onclick="copiar()" value="Copiar" hidden>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
